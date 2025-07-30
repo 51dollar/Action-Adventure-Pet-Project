@@ -138,6 +138,7 @@ _data = {
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(226, 144)
+collision_mask = 16
 motion_mode = 1
 script = ExtResource("1_4ntmi")
 
