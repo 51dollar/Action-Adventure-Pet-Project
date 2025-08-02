@@ -11,7 +11,7 @@ var attacking : bool = false
 
 @onready var idle: State = $"../Idle"
 @onready var walk : State = $"../Walk"
-@onready var hurt_box: HurtBox = $"../../Interections/HurtBox"
+@onready var hurt_box: HurtBox = %AttackHurtBox
 
 func Enter() -> void:
 	player.UpdateAnimation("attack")
