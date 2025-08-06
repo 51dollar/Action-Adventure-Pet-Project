@@ -3,10 +3,10 @@ class_name PlayerInteractionsHost extends Node2D
 @onready var player : Player = $".."
 
 func _ready() -> void:
-	player.DirectionChanged.connect( UpdateDirection )
+	player.direction_changed.connect( update_direction )
 	pass
 
-func UpdateDirection( new_direction : Vector2 ) -> void:
+func update_direction( new_direction : Vector2 ) -> void:
 	match new_direction:
 		Vector2.DOWN:
 			rotation_degrees = 0

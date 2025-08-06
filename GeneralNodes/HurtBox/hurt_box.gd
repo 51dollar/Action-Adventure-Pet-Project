@@ -3,14 +3,11 @@ class_name HurtBox extends Area2D
 @export var damage : int = 1
 
 func _ready() -> void:
-	area_entered.connect( AreaEntered )
+	area_entered.connect( _area_entered )
 	pass
 
 
-func _process(delta: float) -> void:
-	pass
-
-func AreaEntered( a: Area2D ) -> void:
+func _area_entered( a: Area2D ) -> void:
 	if a is HitBox:
-		a.TakeDamage( damage )
+		a.take_damage( damage )
 	pass
