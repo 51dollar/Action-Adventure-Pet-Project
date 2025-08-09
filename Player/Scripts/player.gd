@@ -23,7 +23,7 @@ func _ready():
 	player_manager.player = self
 	state_machine.initialize(self)
 	hit_box.damaged.connect( _take_damage )
-	update_hp(99)
+	update_hp( 99 )
 	pass
 
 
@@ -80,6 +80,7 @@ func _take_damage( hurt_box : HurtBox ) -> void:
 
 func update_hp( delta : int ) -> void:
 	hp = clampi( hp + delta, 0, max_hp )
+	player_hub.update_hp( hp, max_hp )
 	pass
 
 func make_invulnerable( _duration : float = 1.0 ) -> void:
