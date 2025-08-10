@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 level_manager="*res://00_Globals/global_level_manager.gd"
-player_manager="*res://00_Globals/global_player_manager.gd"
 player_hub="*res://GUI/Player_hub/player_hub.tscn"
+player_manager="*res://00_Globals/global_player_manager.gd"
 
 [display]
 
