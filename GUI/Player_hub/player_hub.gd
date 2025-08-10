@@ -9,7 +9,7 @@ func _ready() -> void:
 			child.visible = false
 	pass
 
-func uprate_hp( _hp : int, _max_hp : int ) -> void:
+func update_hp( _hp : int, _max_hp : int ) -> void:
 	update_max_hp( _max_hp )
 	for i in _max_hp:
 		update_heart( i, _hp )
