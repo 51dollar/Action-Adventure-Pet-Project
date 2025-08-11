@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Action-Adventure-Pet-Project"
-run/main_scene="uid://dgbb8aedrpvbg"
+run/main_scene="uid://b54g73lqpe86r"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 level_manager="*res://00_Globals/global_level_manager.gd"
 player_hub="*res://GUI/Player_hub/player_hub.tscn"
 player_manager="*res://00_Globals/global_player_manager.gd"
+scene_transition="*res://GUI/scene_transition/scene_transition.tscn"
 
 [display]
 
@@ -31,7 +32,6 @@ window/stretch/mode="viewport"
 
 [editor]
 
-version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
 [input]
@@ -82,3 +82,5 @@ attack={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
